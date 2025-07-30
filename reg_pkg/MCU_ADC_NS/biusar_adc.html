@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/register_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>sar_adc</title>
+    </head>
+    <body>
+        <h1>SAR_ADC</h1>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>PLL Control register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PD
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Power Down signal for the SAR ADC1: power down0: Normal Operation</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>RESET_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>SAR ADC Block Reset0: Reset Asserted1: Reset Released</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SEL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>SARADC Input selection0 – VIN0…7: VIN7</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[6:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CONV_MODE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Conversion Mode00: 21-cycle mode01:20-cycle mode1x:17-cycle mode</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:7]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SEL_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Enable signal of saradc_sel[2:0]0: Disconnect from VIN0/VIP0~VIN7/VIP71: Connect to VIN0/VIP0~VIN7/VIP7 according to saradc_sel[2:0]</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>EN_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>ADC enable control0: disable1: enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[9:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>START_CONV
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Start the ADC Conversion</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:10]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ADC_CONV_TYPE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>ADC Conversion Type00: Single shot mode, will ADC conversion will happen usingSTAT_CONV01: Continuous conversion mode. Writing this will directly startthe conversion and will keep continuing10: Trigger mode. External trigger mux output will trigger theconversions in this mode.11: Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BGCLK_DIV
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x9</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>SARADC BG Clock DividerDiv /1 to DIV 16</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CONT_CONV_INTV
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Continuous Conversion IntervalThis is in addition to the minimum clock cycles needed</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[29:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CON_DATA_LT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Data Latch after this field number cycles. This can only beprogrammed in single conversion or in continuous with same orless number of clock cycles as CONT_CONV_INTV field</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_CTRL1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000004</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ANA_REG
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>SARADC Analog Register</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_DATA_ULIMIT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000008</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>VALUE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0xFFF</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Upper limit for Data comparision</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_DATA_LLIMIT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000000C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>VALUE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Lower limit for Data comparision</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(WOC-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_STATUS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000010</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>ADC status register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CONV_DONE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Conversion Done Status. Write 1 to clear</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DATA_ULIMIT_FAIL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Data is above Upper Limit</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DATA_LLIMIT_FAIL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Data is Below Lower Limit</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_INT_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000014</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>ADC interrupt Enable Register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CONV_DONE_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>ADC Conversion done interrupt enable0: disable1: enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DATA_ULIMIT_FAIL_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Interrupt generation enable for Data upper limit fail</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DATA_LLIMIT_FAIL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Interrupt generation enable for Data lower limit fail</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_DATA
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000018</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DATA
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>A 12 bit output representing the ADC Output Datas</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_BIST_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000FF0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>ADC BIST Control Register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_MODE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bist mode Enable0: Normal mode1: BIST mode</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_START
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Writing 1 to this register starts the BIST conversion</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[13:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_REF_MIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>BIST reference Minimum code for comparison</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[25:14]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_REF_MAX
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>BIST reference Maximum code for comparison</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(WOC-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>sar_adc_BIST_STS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000FF4</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>ADC BIST Control Register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_DONE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bist Done Bit. Write 1 to Clear</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>BIST_FAIL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>BIST Fail Bit. Write 1 to Clear</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+        </p>
+    </body>
+</html>
